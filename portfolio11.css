@@ -196,6 +196,13 @@ ul li a:hover {
     max-width: 900px; */
 }
 
+#forma {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 100px;
+    color: var(#17140b);
+}
+
 .card {
     background: #f9efef;
     padding: 25px;
@@ -212,6 +219,94 @@ ul li a:hover {
 }
 
 .card h2,h3,h4 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* RESPONSIVE */
+@media (width < 750px) {
+
+    nav .checkbox {
+        display: block;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 85px);
+        left: -100%;
+        top: 85px;
+        background-color: var(--extra-light);
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    nav #check:checked ~ ul {
+        left: 0;
+    }
+
+    ul li a {
+        font-size: 1.25rem;
+    }
+
+    .section_container {
+        padding: 10rem 1rem 5rem;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    .action_btns {
+        margin: auto;
+    }
+
+    .image {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .container1 {
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+}
+.container2 {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 30px;
+    width: 80%;
+    max-width: 900px; */
+}
+
+#forma {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 100px;
+    color: var(#17140b);
+}
+
+.card {
+    background: #f9efef;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    width: 50%;
+    margin: 2%;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+
+}
+
+.card h7,h8 {
     margin: 0 0 10px;
     font-size: 22px;
     color: var(--primary-color);
