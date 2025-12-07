@@ -218,7 +218,7 @@ ul li a:hover {
 
 }
 
-.card h2,h3,h4 {
+.card h3 {
     margin: 0 0 10px;
     font-size: 22px;
     color: var(--primary-color);
@@ -291,6 +291,13 @@ ul li a:hover {
     color: var(#17140b);
 }
 
+#Exper{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 100px;
+    color: var(#17140b);
+}
+
 .card {
     background: #f9efef;
     padding: 25px;
@@ -306,11 +313,7 @@ ul li a:hover {
 
 }
 
-.card h7,h8 {
-    margin: 0 0 10px;
-    font-size: 22px;
-    color: var(--primary-color);
-}
+
 
 .card p {
     margin: 5px 0;
