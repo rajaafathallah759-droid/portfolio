@@ -509,3 +509,22 @@ ul li a:hover {
     color: var(--primary-color);; 
    
 }
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+    --extra-light: #121212;
+    --secondary-color: #1e1e1e;
+    --text-dark: #ffffff;
+    --text-light: #cccccc;
+    --primary-color: #f08c86;
+    --primary-color-dark: #d96a63;
+}
+
+/* bouton dark mode */
+.theme-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
+}
