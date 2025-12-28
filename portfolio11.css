@@ -5,6 +5,7 @@
     --primary-color-dark: #7a1e16;
     --secondary-color:#f9efef ;
     --text-dark: black;
+    --text-darkk: #333333;
     --text-light: #17140b;
     --extra-light: white;
     --max-width: 90%;
@@ -80,7 +81,7 @@ ul li a {
     padding: 0.5rem 1rem;
     border: 2px solid transparent;
     font-weight: 600;
-    color: var(--text-dark);
+    color: var(--text-darkk);
     transition: 0.3s;
 }
 
