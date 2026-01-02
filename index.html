@@ -29,19 +29,19 @@
             <input type="checkbox" id="check">
 
             <ul class="navbar">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
-            <button id="theme-toggle">🌙</button>
-            </li>
+                    <button id="theme-toggle">🌙</button>
+                </li>
             </ul>
         </div>
     </nav>
 
     <section class="section">
-        <div class="section_container">
+        <div class="section_container" id="about">
 
             <div class="content">
                 <p class="subtitle">Hello</p>
@@ -73,7 +73,7 @@
                         </svg>
                     </a>
 
-                                    <!-- GitHub -->
+                    <!-- GitHub -->
                     <a href="https://github.com/rajaafathallah759-droid" target="_blank">
                         <svg height="26" width="26" viewBox="0 0 16 16" fill="currentColor">
                             <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 
@@ -121,99 +121,94 @@
             </div>
 
         </div>
-       <div class="container1">
-       <h2 class="formation-title">Formation</h2>
-         <div class="formations">
-        <div class="card">
-            <h3>2025-2026</h3>
-            <p>Licence professionnelle continue en développement informatique (en cours..)</p>
-            <p>Université Hassan 2 de Casablanca</p>
+        <div class="container1" id="education">
+            <h2 class="formation-title">Formation</h2>
+            <div class="formations">
+                <div class="card">
+                    <h3>2025-2026</h3>
+                    <p>Licence professionnelle continue en développement informatique (en cours..)</p>
+                    <p>Université Hassan 2 de Casablanca</p>
+                </div>
+
+                <div class="card">
+                    <h3>2019-2023</h3>
+                    <p>Licence universitaires en Economie </p>
+                    <p>Faculté des Sciences juridiques, economiques et sociales Ain chok </p>
+                </div>
+
+                <div class="card">
+                    <h3>2018-2019</h3>
+                    <p>Baccalauréat Sciences la vie et la terre </p>
+                    <p>Lycée qualifiant Abdlkhalek Torres </p>
+                </div>
+            </div>
         </div>
 
-        <div class="card">
-            <h3>2019-2023</h3>
-            <p>Licence universitaires en Economie </p>
-            <p>Faculté des Sciences juridiques, economiques et sociales Ain chok </p>
-        </div>
+        <div class="container2"  id="experience">
+            <h2 class="formation-title">Experience</h2>
+            <div class="experiences">
+                <div class="card-experience">
+                    <h3>Stage en Service D'Appel D'offres</h3>
+                    <p>Entreprise: "TROMBINO SERVICES"</p>
+                    <ul>
+                        <li>Analyse des dossiers d'appel d'offres</li>
+                        <li>Recherche et suivi des consultation publiques et privees</li>
+                        <li>Preparation des dossiers administratifs et techniques</li>
 
-        <div class="card">
-            <h3>2018-2019</h3>
-            <p>Baccalauréat Sciences la vie et la terre </p>
-            <p>Lycée qualifiant Abdlkhalek Torres </p>
-        </div>
-    </div>
-       </div>
+                    </ul>
+                </div>
 
-    <div class="container2">
-        <h2 class="formation-title">Experience</h2>
-        <div class="experiences">
-        <div class="card-experience">
-            <h3>Stage en Service D'Appel D'offres</h3>
-            <p>Entreprise: "TROMBINO SERVICES"</p>
-            <ul>
-                <li>Analyse des dossiers d'appel d'offres</li>
-                <li>Recherche et suivi des consultation publiques et privees</li>
-                <li>Preparation des dossiers administratifs et techniques</li>
-
-            </ul>
+                <div class="card-experience" >
+                    <h3>Stage PFE </h3>
+                    <p>Stagiaire en Analyse Economique </p>
+                    <p>Faculté des Sciences juridiques, economiques et sociales Ain chok </p>
+                    <ul>
+                        <li>Analyse des donnees economiques et financieres</li>
+                        <li>Elaboration de tableaux de bord et rapports</li>
+                        <li>Etude de l'impact des taux d'interet sur les PME</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <div class="card-experience">
-            <h3>Stage PFE </h3>
-            <p>Stagiaire en Analyse Economique  </p>
-            <p>Faculté des Sciences juridiques, economiques et sociales Ain chok </p>
-            <ul>
-                <li>Analyse des donnees economiques et financieres</li>
-                <li>Elaboration de tableaux de bord et rapports</li>
-                <li>Etude de l'impact des taux d'interet sur les PME</li>
-            </ul>
+        <div class="container3" id="contact">
+            <h2 class="formation-title">Contact Me</h2>
+            <div class="Contact-from">
+                <form action="https://formspree.io/f/{FORM_ID}" class="fs-form" target="_top" method="POST">
+                    <div class="fs-field">
+                        <label class="fs-label" for="name">Name</label>
+                        <input class="fs-input" id="name" name="name" />
+                    </div>
+                    <div class="fs-field">
+                        <label class="fs-label" for="email">Email</label>
+                        <input class="fs-input" id="email" name="email" required />
+                    </div>
+                    <div class="fs-field">
+                        <label class="fs-label" for="message">Message</label>
+                        <textarea class="fs-textarea" id="message" name="message"></textarea>
+                        <p class="fs-description">We usually respond within 1-2 business days.</p>
+                    </div>
+                    <div class="fs-button-group">
+                        <button class="fs-button" type="submit">Send</button>
+                    </div>
+                </form>
+                <div class="image2">
+                    <img src="./message-received-2-76 (1).png" alt="Contact image">
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
-<div class="container3">
-    <h2 class="formation-title">Contact Me</h2>
-    <div class="Contact-from">
-  <form
-  action="https://formspree.io/f/{FORM_ID}"
-  class="fs-form"
-  target="_top"
-  method="POST"
->
-  <div class="fs-field">
-    <label class="fs-label" for="name">Name</label>
-    <input class="fs-input" id="name" name="name" />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="email">Email</label>
-    <input class="fs-input" id="email" name="email" required />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="message">Message</label>
-    <textarea class="fs-textarea" id="message" name="message"></textarea>
-    <p class="fs-description">We usually respond within 1-2 business days.</p>
-  </div>
-  <div class="fs-button-group">
-    <button class="fs-button" type="submit">Send</button>
-  </div>
-</form>
-<div class="image2">
-            <img src="../portfolio/message-received-2-76 (1).png" alt="Contact image">
-        </div>
-    </div>
-</div>
     </section>
     <footer class="footer">
-    <div class="footer-content">
+        <div class="footer-content">
 
-        <ul class="footer-links">
-            <li><a href="#á propos">À propos</a></li>
-            <li><a href="#formation">Formation</a></li>
-             <li><a href="#experiences">Expériences</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <p>© 2025 Rajae Fathallah</p>
-    </div>
-</footer>
+            <ul class="footer-links">
+                <li><a href="#á propos">À propos</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p>© 2025 Rajae Fathallah</p>
+        </div>
+    </footer>
 </body>
-</html>
 
+</html>
