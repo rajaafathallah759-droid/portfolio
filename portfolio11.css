@@ -3,10 +3,9 @@
 :root {
     --primary-color: #97251b;
     --primary-color-dark: #7a1e16;
+    --text-dark: #333333 ;
+    --text-light: #777777 ;
     --secondary-color:#f9efef ;
-    --text-dark: black;
-    --text-darkk: #333333;
-    --text-light: #17140b;
     --extra-light: white;
     --max-width: 90%;
 }
@@ -81,7 +80,7 @@ ul li a {
     padding: 0.5rem 1rem;
     border: 2px solid transparent;
     font-weight: 600;
-    color: var(--text-darkk);
+    color: var(--text-dark);
     transition: 0.3s;
 }
 
@@ -207,6 +206,7 @@ ul li a:hover {
 }
 .card {
     background: var(--secondary-color);
+    color: var(--text-dark);
     /*width: 100%;*/
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
@@ -234,7 +234,7 @@ ul li a:hover {
 }
 
 /* RESPONSIVE */
-@media (width < 750px) {
+@media (max-width < 750px) {
 
     nav .checkbox {
         display: block;
@@ -300,6 +300,7 @@ ul li a:hover {
     gap:2rem ;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     transition: transform 0.3s ease;
+    color: var(--text-dark);
 }
 .card-experience h3 {
 
@@ -307,11 +308,7 @@ ul li a:hover {
     font-size: 1.6rem;
     color: var(--primary-color);
 }
-.card-experience p{
-    margin-left: 1.2rem;
 
-    line-height: 1.5rem
-}
 .card-experience ul {
     padding-left: 1.2rem;
     margin-top: 1.2rem;
@@ -520,6 +517,9 @@ body.dark-mode {
     --primary-color: #f08c86;
     --primary-color-dark: #d96a63;
 }
+.navbar {
+color: var(--text-dark);
+}
 
 /* bouton dark mode */
 .theme-btn {
@@ -529,3 +529,17 @@ body.dark-mode {
     cursor: pointer;
     color: var(--primary-color);
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+section,
+.container1,
+.container2,
+.container3 {
+    scroll-margin-top: 120px;
+    display: block;
+}
+
+
